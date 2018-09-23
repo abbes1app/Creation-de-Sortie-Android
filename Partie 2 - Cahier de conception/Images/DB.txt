@@ -1,0 +1,98 @@
+# Modify the code to update the DB schema diagram.
+# To reset the sample schema, replace everything with
+# two dots ('..' - without quotes).
+# https://app.quickdatabasediagrams.com/#/
+
+Sortie
+-
+id_sortie PK int
+nom text
+date date
+id_transport int
+code_postal text
+
+Adresse
+-
+id_adresse PK int
+nom text
+adresse NULL text
+latitude real
+longitude real
+
+Ami
+-
+id_ami PK int
+nom text
+prenom text
+id_adresse NULL int FK >- Adresse.id_adresse
+telephone NULL text
+
+Participants
+-
+id_sortie int FK >- Sortie.id_sortie
+id_ami int FK >- Ami.id_ami
+
+Favoris
+-
+id_type NULL int FK >- TypeEtape.id_type
+id_adresse int FK >- Adresse.id_adresse
+
+Contrainte
+-
+id_contrainte PK int
+nom text
+requette text
+
+ContraintesSortie
+-
+id_sortie int FK >- Sortie.id_sortie
+id_contrainte int FK >- Contrainte.id_contrainte
+
+TypeEtape
+-
+id_type PK int
+nom text
+image text
+
+ListeEtapes
+-
+id_sortie int FK >- Sortie.id_sortie
+position int 
+debut NULL date
+fin NULL date
+id_type int FK >- TypeEtape.id_type
+id_adresse NULL int FK >- Adresse.id_adresse
+
+TempsDePassage
+-
+id_type NULL int FK >- TypeEtape.id_type
+nom NULL text
+duree real
+
+
+[settings]
+Position 15 5
+Zoom 100
+DefaultFieldType int
+CaseSensitive on
+
+[layout]
+ContraintesSortie 275 23
+
+Sortie 30 23
+
+Adresse 30 611
+
+Ami 30 407
+
+Favoris 306 611
+
+Participants 30 257
+
+Contrainte 587 23
+
+ListeEtapes 306 275
+
+TypeEtape 601 611
+
+TempsDePassage 587 275

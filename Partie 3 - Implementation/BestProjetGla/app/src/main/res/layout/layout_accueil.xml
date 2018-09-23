@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.amgsoft_pc.bestprojetgla.fragment.FragmentAccueil">
+
+    <LinearLayout
+        android:id="@+id/entete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1c226a"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:text="Bar ? Ciné ? Resto... ?"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/abbes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entete"
+        android:background="@color/btn_creer_sortie"
+        android:padding="30dp">
+
+        <Button
+            android:id="@+id/btnsortir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btn_login_bg"
+            android:text="Créer Une Sortie"
+            android:textColor="@color/btn_creer_sortie" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/abbes"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@mipmap/ic_notifications_black_24dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="À Venir"
+            android:textColor="@color/almost_black" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <include
+            android:id="@+id/item_etape"
+            layout="@layout/item_etape" />
+    </LinearLayout>
+</RelativeLayout>

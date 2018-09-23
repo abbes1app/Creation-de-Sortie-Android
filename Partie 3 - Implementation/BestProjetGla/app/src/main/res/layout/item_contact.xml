@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/input_register_bg"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_face_black_24dp"
+        android:drawablePadding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="nom prenom"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_call_black_24dp"
+        android:drawablePadding="5dp"
+        android:text="+331 54 26 35 79"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</LinearLayout>

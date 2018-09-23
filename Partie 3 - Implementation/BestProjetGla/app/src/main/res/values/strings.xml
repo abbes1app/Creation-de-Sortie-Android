@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">J\'y Go</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hint_email">Lieu de départ</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_cnpassword">Confirmez votre Mot de passe</string>
+    <string name="hint_name">Nom</string>
+    <string name="btn_login">Coonexion</string>
+    <string name="btn_register">Inscription</string>
+    <string name="btn_link_to_login">Vous avez deja un compte ! \n Connectez vous .</string>
+    <string name="welcome">Bonjour</string>
+    <string name="btn_logout">Déconnexion</string>
+    <string name="name">Votre Nom</string>
+    <string name="drawer_opened">Opened</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="date_label_set">Press the button to set the date</string>
+    <string name="date_button_set">Set Date</string>
+    <string name="date_view_set">The Date is: </string>
+    <string name="drawer_closed">Closed</string>
+    <string-array name="array">
+        <item>Etat</item>
+        <item>on</item>
+        <item>off</item>
+
+
+    </string-array>
+    <string-array name="array1">
+        <item>Type</item>
+        <item>tram</item>
+        <item>bus</item>
+
+
+    </string-array>
+    <string-array name="items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+    </string-array>
+
+    <string name="mon_texte">Mon texte</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

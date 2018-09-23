@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/contrainte_perso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Entrez Votre Contrainte" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/contrainte_perso"
+        android:layout_alignLeft="@+id/contrainte_perso"
+        android:layout_alignRight="@+id/contrainte_perso"
+        android:layout_alignStart="@+id/contrainte_perso"
+        android:layout_below="@+id/contrainte_perso"
+        android:gravity="center">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/jaime"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/avis_like_gris" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/jaime_pas"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/avis_dislike_gris" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
